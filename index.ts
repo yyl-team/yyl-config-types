@@ -134,6 +134,9 @@ export interface Env {
   [key: string]: any
 }
 
+export type ScriptsFn = ({ env: Env, config: YylConfig }) => Promise<unknown>
+export type ScriptsHandler = string | ScriptsFn
+
 /** yyl 配置 */
 export interface YylConfig {
   /** seed 包名称 */
@@ -163,6 +166,20 @@ export interface YylConfig {
   /** webpack.resolve.alias 配置 */
   alias?: {
     [name: string]: string
+  }
+  /** all 相关配置 */
+  all?: {
+    /** 配置构建执行前运行脚本 */
+    beforeScripts?: ScriptsHandler
+    /** 配置构建执行前运行脚本 */
+    afterScripts?: ScriptsHandler
+  }
+  /** watch 相关配置 */
+  watch: {
+    /** 配置构建执行前运行脚本 */
+    beforeScripts?: ScriptsHandler
+    /** 配置构建执行前运行脚本 */
+    afterScripts?: ScriptsHandler
   }
 
   /** seed sub name (适用于 webpack) */
