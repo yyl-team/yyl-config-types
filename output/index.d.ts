@@ -112,6 +112,8 @@ export interface Env {
     babelLoaderIncludes?: string[];
     /** url-loader limit值配置 (适用于 webpack) */
     base64Limit?: number;
+    /** url-loader 命中 test 追加 */
+    urlLoaderMatch: RegExp;
     /** 自定义变量 */
     [key: string]: any;
 }
