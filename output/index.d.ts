@@ -114,6 +114,8 @@ export interface Env {
     base64Limit?: number;
     /** url-loader 命中 test 追加 */
     urlLoaderMatch?: RegExp;
+    /** 使用 hot plugin */
+    useHotPlugin?: boolean;
     /** 自定义变量 */
     [key: string]: any;
 }
