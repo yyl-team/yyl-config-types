@@ -172,4 +172,6 @@ export interface YylConfig {
     seed?: string;
     /** 是否自动 px 转 rem (适用于 webpack) */
     px2rem?: boolean;
+    /** 补充 webpack.resolveModule 路径 (适用于 webpack) */
+    resolveModule?: string;
 }

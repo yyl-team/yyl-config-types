@@ -1,4 +1,6 @@
 # 版本信息
+## 0.3.3 (2021-01-14)
+* feat: 新增 `yylConfig.resolveModule` 参数
 ## 0.3.2 (2021-01-14)
 * feat: 新增 `env.useHotPlugin` 参数
 ## 0.3.1 (2021-01-14)
