@@ -131,6 +131,8 @@ export interface Env {
   /** url-loader 命中 test 追加 */
   urlLoaderMatch?: RegExp
   // - yyl-seed-webpack 配置
+  /** 使用 hot plugin */
+  useHotPlugin?: boolean
 
   /** 自定义变量 */
   [key: string]: any
