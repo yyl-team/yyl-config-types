@@ -108,12 +108,6 @@ export interface Env {
     livereload?: boolean;
     /** 启动热更新 (适用于 webpack) */
     hmr?: boolean;
-    /** 配置加入 babel 的插件 (适用于 webpack) */
-    babelLoaderIncludes?: string[];
-    /** url-loader limit值配置 (适用于 webpack) */
-    base64Limit?: number;
-    /** url-loader 命中 test 追加 */
-    urlLoaderMatch?: RegExp;
     /** 使用 hot plugin */
     useHotPlugin?: boolean;
     /** 自定义变量 */
@@ -174,4 +168,10 @@ export interface YylConfig {
     px2rem?: boolean;
     /** 补充 webpack.resolveModule 路径 (适用于 webpack) */
     resolveModule?: string;
+    /** 配置加入 babel 的插件 (适用于 webpack) */
+    babelLoaderIncludes?: string[];
+    /** url-loader limit值配置 (适用于 webpack) */
+    base64Limit?: number;
+    /** url-loader 命中 test 追加 */
+    urlLoaderMatch?: RegExp;
 }

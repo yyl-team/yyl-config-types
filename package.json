@@ -1,12 +1,12 @@
 {
   "name": "yyl-config-types",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "yyl.config types",
   "main": "output/index.js",
   "scripts": {
     "eslint": "eslint --ext=jsx,ts,tsx ./",
     "prettier": "prettier --write ./**/*.{ts,tsx,js}",
-    "prepublishOnly": "tsc",
+    "prepublishOnly": "npm run d & npm run prettier",
     "d": "tsc"
   },
   "eslintConfig": {
