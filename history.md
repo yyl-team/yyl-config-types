@@ -1,4 +1,12 @@
 # 版本信息
+
+## 0.3.4 (2021-01-15)
+* del: 去掉 `Env.babelLoaderIncludes`
+* del: 去掉 `Env.base64Limit`
+* del: 去掉 `Env.urlLoaderMatch`
+* feat: 新增 `YylConfig.babelLoaderIncludes`
+* feat: 新增 `YylConfig.base64Limit`
+* feat: 新增 `YylConfig.urlLoaderMatch`
 ## 0.3.3 (2021-01-14)
 * feat: 新增 `yylConfig.resolveModule` 参数
 ## 0.3.2 (2021-01-14)
