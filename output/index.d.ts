@@ -98,6 +98,8 @@ export interface Env {
     https?: boolean;
     /** 已由 --remote 代替，不建议使用 */
     ver?: 'remote';
+    /** 参数配置 */
+    NODE_ENV?: 'string';
     /** 二级 seed 名称 */
     seed?: string;
     /** 是否写入 dist (适用于 webpack) */
