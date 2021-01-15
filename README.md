@@ -3,40 +3,13 @@
 
 ## 以下内容为 types 内容
 ```typescript
-/** yyl 配置 */
-export interface YylConfig {
-    /** seed 包名称 */
-    workflow?: string;
-    /** yyl 版本 */
-    version?: string;
-    /** 平台 */
-    platform?: PlatformType;
-    /** 代理配置 */
-    proxy?: ProxyConfig;
-    /** 本地服务配置 */
-    localserver?: LocalserverConfig;
-    /** 是否使用 yarn */
-    yarn?: boolean;
-    /** 输出配置 */
-    dest?: DestConfig;
-    /** 打包配置 */
-    commit?: CommitConfig;
-    /** 合并配置 */
-    concat?: ConcatConfig;
-    /** copy配置 */
-    resource?: ResourceConfig;
-    /** 插件配置(不建议使用) */
-    plugins?: string[];
-    /** webpack 文件路径配置 */
-    webpackConfigPath?: string;
-    /** webpack.resolve.alias 配置 */
-    alias?: {
-        [name: string]: string;
-    };
-    /** seed sub name (适用于 webpack) */
-    seed?: string;
-    /** 是否自动 px 转 rem (适用于 webpack) */
-    px2rem?: boolean;
+/** 平台类型 */
+export declare type PlatformType = 'pc' | 'mobile';
+/** 日志等级 */
+export declare type LogLevel = 1 | 2 | 0;
+/** 映射 map 类型 */
+export interface AddressMap {
+    [address: string]: string;
 }
 /** concat 配置 */
 export interface ConcatConfig {
@@ -45,12 +18,6 @@ export interface ConcatConfig {
 /** copy 配置 */
 export interface ResourceConfig {
     [src: string]: string[];
-}
-/** 日志等级 */
-export declare type LogLevel = 1 | 2 | 0;
-/** 映射 map 类型 */
-export interface AddressMap {
-    [address: string]: string;
 }
 /** 反向代理相关配置 */
 export interface ProxyConfig {
@@ -146,12 +113,93 @@ export interface Env {
     livereload?: boolean;
     /** 启动热更新 (适用于 webpack) */
     hmr?: boolean;
+    /** 使用 hot plugin */
+    useHotPlugin?: boolean;
+    /** 自定义变量 */
+    [key: string]: any;
+}
+export declare type ScriptsFn = ({ env: Env, config: YylConfig }: {
+    env: any;
+    config: any;
+}) => Promise<unknown>;
+export declare type ScriptsHandler = string | ScriptsFn;
+export interface YylConfigAlias {
+    /** 输出路径 */
+    root?: string;
+    /** 根目录 */
+    dirname?: string;
+    /** js输出路径 */
+    jsDest?: string;
+    /** src 路径 */
+    srcRoot?: string;
+    /** css 输出路径 */
+    cssDest?: string;
+    /** html 输出路径 */
+    htmlDest?: string;
+    /** images 输出路径 */
+    imagesDest?: string;
+    /** 前置路径 */
+    basePath?: string;
+    /** 输出 host */
+    publicPath?: string;
+    /** 其他 */
+    [name: string]: string;
+}
+/** yyl 配置 */
+export interface YylConfig {
+    /** 项目名称 */
+    name?: string;
+    /** seed 包名称 */
+    workflow?: string;
+    /** yyl 版本 */
+    version?: string;
+    /** 平台 */
+    platform?: PlatformType;
+    /** 代理配置 */
+    proxy?: ProxyConfig;
+    /** 本地服务配置 */
+    localserver?: LocalserverConfig;
+    /** 是否使用 yarn */
+    yarn?: boolean;
+    /** 输出配置 */
+    dest?: DestConfig;
+    /** 打包配置 */
+    commit?: CommitConfig;
+    /** 合并配置 */
+    concat?: ConcatConfig;
+    /** copy配置 */
+    resource?: ResourceConfig;
+    /** 插件配置(不建议使用) */
+    plugins?: string[];
+    /** webpack 文件路径配置 */
+    webpackConfigPath?: string;
+    /** webpack.resolve.alias 配置 */
+    alias?: YylConfigAlias;
+    /** all 相关配置 */
+    all?: {
+        /** 配置构建执行前运行脚本 */
+        beforeScripts?: ScriptsHandler;
+        /** 配置构建执行前运行脚本 */
+        afterScripts?: ScriptsHandler;
+    };
+    /** watch 相关配置 */
+    watch: {
+        /** 配置构建执行前运行脚本 */
+        beforeScripts?: ScriptsHandler;
+        /** 配置构建执行前运行脚本 */
+        afterScripts?: ScriptsHandler;
+    };
+    /** seed sub name (适用于 webpack) */
+    seed?: string;
+    /** 是否自动 px 转 rem (适用于 webpack) */
+    px2rem?: boolean;
+    /** 补充 webpack.resolveModule 路径 (适用于 webpack) */
+    resolveModule?: string;
     /** 配置加入 babel 的插件 (适用于 webpack) */
     babelLoaderIncludes?: string[];
     /** url-loader limit值配置 (适用于 webpack) */
     base64Limit?: number;
-    /** 自定义变量 */
-    [key: string]: any;
+    /** url-loader 命中 test 追加 */
+    urlLoaderMatch?: RegExp;
 }
-export declare type PlatformType = 'pc' | 'mobile';
 ```

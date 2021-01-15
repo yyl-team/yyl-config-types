@@ -1,6 +1,8 @@
 # 版本信息
+## 0.3.6 (2021-01-15)
+* feat: 补充 `YylConfig.name` 字段
 ## 0.3.5 (2021-01-15)
-* feat: 补充 `yylConfig.alias` 具体字段
+* feat: 补充 `YylConfig.alias` 具体字段
 * feat: 新增 `YylConfigAlias`
 ## 0.3.4 (2021-01-15)
 * del: 去掉 `Env.babelLoaderIncludes`

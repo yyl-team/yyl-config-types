@@ -142,6 +142,8 @@ export interface YylConfigAlias {
 }
 /** yyl 配置 */
 export interface YylConfig {
+    /** 项目名称 */
+    name?: string;
     /** seed 包名称 */
     workflow?: string;
     /** yyl 版本 */
