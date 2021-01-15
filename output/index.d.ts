@@ -118,6 +118,28 @@ export declare type ScriptsFn = ({ env: Env, config: YylConfig }: {
     config: any;
 }) => Promise<unknown>;
 export declare type ScriptsHandler = string | ScriptsFn;
+export interface YylConfigAlias {
+    /** 输出路径 */
+    root?: string;
+    /** 根目录 */
+    dirname?: string;
+    /** js输出路径 */
+    jsDest?: string;
+    /** src 路径 */
+    srcRoot?: string;
+    /** css 输出路径 */
+    cssDest?: string;
+    /** html 输出路径 */
+    htmlDest?: string;
+    /** images 输出路径 */
+    imagesDest?: string;
+    /** 前置路径 */
+    basePath?: string;
+    /** 输出 host */
+    publicPath?: string;
+    /** 其他 */
+    [name: string]: string;
+}
 /** yyl 配置 */
 export interface YylConfig {
     /** seed 包名称 */
@@ -145,9 +167,7 @@ export interface YylConfig {
     /** webpack 文件路径配置 */
     webpackConfigPath?: string;
     /** webpack.resolve.alias 配置 */
-    alias?: {
-        [name: string]: string;
-    };
+    alias?: YylConfigAlias;
     /** all 相关配置 */
     all?: {
         /** 配置构建执行前运行脚本 */
