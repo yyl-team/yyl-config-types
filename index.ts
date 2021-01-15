@@ -111,6 +111,9 @@ export interface Env {
   https?: boolean
   /** 已由 --remote 代替，不建议使用 */
   ver?: 'remote'
+
+  /** 参数配置 */
+  NODE_ENV?: 'string'
   // - yyl-server 相关配置
 
   // + yyl-seed-webpack 配置
