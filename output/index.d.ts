@@ -12,7 +12,7 @@ export interface ConcatConfig {
 }
 /** copy 配置 */
 export interface ResourceConfig {
-    [src: string]: string[];
+    [src: string]: string;
 }
 /** 反向代理相关配置 */
 export interface ProxyConfig {
