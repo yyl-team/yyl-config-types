@@ -58,7 +58,7 @@ export interface LocalserverConfig {
 /** 输出目录相关配置 */
 export interface DestConfig {
   /** 输出基础路径 */
-  basePath?: string
+  basePath: string
   /** js 输出路径(基于基础路径) */
   jsPath: string
   /** jslib 输出路径(基于基础路径) */
@@ -168,7 +168,7 @@ export interface YylConfigAlias {
   /** 输出 host */
   publicPath?: string
   /** 其他 */
-  [name: string]: string
+  [name: string]: string | undefined
 }
 
 /** yyl 配置 */
