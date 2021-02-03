@@ -229,3 +229,10 @@ export interface YylConfig {
   /** url-loader 命中 test 追加 */
   urlLoaderMatch?: RegExp
 }
+
+export interface YylConfigEntryProps {
+  env: Env
+}
+
+/** yyl.config.js 返回对象 */
+export type YylConfigEntry = (props: YylConfigEntryProps) => YylConfig

@@ -1,6 +1,6 @@
 **/js/lib/**
 dist/**
-doc/**
+docs/**
 output/**
 node_modules/**
 **/*.json
