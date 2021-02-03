@@ -146,29 +146,29 @@ export type ScriptsHandler = string | ScriptsFn
 
 export interface YylConfigAlias {
   /** 输出路径 */
-  root?: string
+  root: string
   /** 根目录 */
-  dirname?: string
+  dirname: string
   /** js输出路径 */
-  jsDest?: string
+  jsDest: string
   /** src 路径 */
-  srcRoot?: string
+  srcRoot: string
   /** css 输出路径 */
-  cssDest?: string
+  cssDest: string
   /** html 输出路径 */
-  htmlDest?: string
+  htmlDest: string
   /** images 输出路径 */
-  imagesDest?: string
+  imagesDest: string
   /** rev-manifest 输出路径 */
-  revDest?: string
+  revDest: string
   /** rev-manifest 输出的根目录路径 */
-  revRoot?: string
+  revRoot: string
   /** 前置路径 */
-  basePath?: string
+  basePath: string
   /** 输出 host */
-  publicPath?: string
+  publicPath: string
   /** 其他 */
-  [name: string]: string | undefined
+  [name: string]: string
 }
 
 /** yyl 配置 */
