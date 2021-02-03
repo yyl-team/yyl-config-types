@@ -135,6 +135,8 @@ export interface YylConfigAlias {
     htmlDest?: string;
     /** images 输出路径 */
     imagesDest?: string;
+    /** rev-manifest 输出路径 */
+    revDest?: string;
     /** 前置路径 */
     basePath?: string;
     /** 输出 host */
