@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ProxyConfig | yyl-config-types</title>
+	<title>YylConfigEntryProps | yyl-config-types</title>
 	<meta name="description" content="Documentation for yyl-config-types">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,28 +55,21 @@
 					<a href="../modules.html">yyl-config-types</a>
 				</li>
 				<li>
-					<a href="proxyconfig.html">ProxyConfig</a>
+					<a href="yylconfigentryprops.html">YylConfigEntryProps</a>
 				</li>
 			</ul>
-			<h1>Interface ProxyConfig</h1>
+			<h1>Interface YylConfigEntryProps</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>反向代理相关配置</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ProxyConfig</span>
+						<span class="target">YylConfigEntryProps</span>
 					</li>
 				</ul>
 			</section>
@@ -87,11 +80,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="proxyconfig.html#homepage" class="tsd-kind-icon">home<wbr>Page</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="proxyconfig.html#https" class="tsd-kind-icon">https</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="proxyconfig.html#ignores" class="tsd-kind-icon">ignores</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="proxyconfig.html#localremote" class="tsd-kind-icon">local<wbr>Remote</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="proxyconfig.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="yylconfigentryprops.html#env" class="tsd-kind-icon">env</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,79 +89,14 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="homepage" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> home<wbr>Page</h3>
-					<div class="tsd-signature tsd-kind-icon">home<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="env" class="tsd-anchor"></a>
+					<h3>env</h3>
+					<div class="tsd-signature tsd-kind-icon">env<span class="tsd-signature-symbol">:</span> <a href="env.html" class="tsd-signature-type" data-tsd-kind="Interface">Env</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/jackness1208/yyl-config-types/blob/02fb8ed/index.ts#L37">index.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/jackness1208/yyl-config-types/blob/02fb8ed/index.ts#L234">index.ts:234</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>主页</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="https" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> https</h3>
-					<div class="tsd-signature tsd-kind-icon">https<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jackness1208/yyl-config-types/blob/02fb8ed/index.ts#L35">index.ts:35</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>是否执行 https</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ignores" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignores</h3>
-					<div class="tsd-signature tsd-kind-icon">ignores<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jackness1208/yyl-config-types/blob/02fb8ed/index.ts#L39">index.ts:39</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>跳过规则</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="localremote" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> local<wbr>Remote</h3>
-					<div class="tsd-signature tsd-kind-icon">local<wbr>Remote<span class="tsd-signature-symbol">:</span> <a href="addressmap.html" class="tsd-signature-type" data-tsd-kind="Interface">AddressMap</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jackness1208/yyl-config-types/blob/02fb8ed/index.ts#L33">index.ts:33</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>映射表</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/jackness1208/yyl-config-types/blob/02fb8ed/index.ts#L31">index.ts:31</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>代理端口</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -204,30 +128,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="localserverconfig.html" class="tsd-kind-icon">Localserver<wbr>Config</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="proxyconfig.html" class="tsd-kind-icon">Proxy<wbr>Config</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="proxyconfig.html#homepage" class="tsd-kind-icon">home<wbr>Page</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="proxyconfig.html#https" class="tsd-kind-icon">https</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="proxyconfig.html#ignores" class="tsd-kind-icon">ignores</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="proxyconfig.html#localremote" class="tsd-kind-icon">local<wbr>Remote</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="proxyconfig.html#port" class="tsd-kind-icon">port</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="resourceconfig.html" class="tsd-kind-icon">Resource<wbr>Config</a>
 					</li>
@@ -237,9 +140,18 @@
 					<li class=" tsd-kind-interface">
 						<a href="yylconfigalias.html" class="tsd-kind-icon">Yyl<wbr>Config<wbr>Alias</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="yylconfigentryprops.html" class="tsd-kind-icon">Yyl<wbr>Config<wbr>Entry<wbr>Props</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="yylconfigentryprops.html#env" class="tsd-kind-icon">env</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-type-alias">
 						<a href="../modules.html#loglevel" class="tsd-kind-icon">Log<wbr>Level</a>
 					</li>
