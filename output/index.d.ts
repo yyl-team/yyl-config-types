@@ -1,5 +1,9 @@
 /** 平台类型 */
 export declare type PlatformType = 'pc' | 'mobile';
+/** seed 类型 */
+export declare type WorkflowType = 'webpack' | 'gulp-requirejs' | 'other';
+/** seed 二级类型, 当 workflow = webpack 时适用 */
+export declare type SeedType = 'react-ts' | 'vue2' | 'vue2-ts' | 'base';
 /** 日志等级 */
 export declare type LogLevel = 1 | 2 | 0;
 /** 映射 map 类型 */
@@ -77,7 +81,7 @@ export interface Env {
     /** 配置名称 */
     name?: string;
     /** 开发内部使用 */
-    workflow?: string;
+    workflow?: WorkflowType;
     /** yyl.conig 路径 */
     config?: string;
     /** 开启打包模式 */
@@ -101,7 +105,7 @@ export interface Env {
     /** 参数配置 */
     NODE_ENV?: 'string';
     /** 二级 seed 名称 */
-    seed?: string;
+    seed?: SeedType;
     /** 是否写入 dist (适用于 webpack) */
     writeToDisk?: boolean;
     /** 显示代理 toast (适用于 webpack) */
@@ -151,7 +155,7 @@ export interface YylConfig {
     /** 项目名称 */
     name?: string;
     /** seed 包名称 */
-    workflow?: string;
+    workflow?: WorkflowType;
     /** yyl 版本 */
     version?: string;
     /** 平台 */
@@ -191,7 +195,7 @@ export interface YylConfig {
         afterScripts?: ScriptsHandler;
     };
     /** seed sub name (适用于 webpack) */
-    seed?: string;
+    seed?: SeedType;
     /** 是否自动 px 转 rem (适用于 webpack) */
     px2rem?: boolean;
     /** 补充 webpack.resolveModule 路径 (适用于 webpack) */

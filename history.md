@@ -1,5 +1,15 @@
 # 版本信息
 
+## 0.3.12 (2021-02-03)
+
+* feat: 补充 typedoc 用于自动生成 types 文件
+## 0.3.11 (2021-02-03)
+
+* feat: 补充 `yylConfig.workflow` 定义
+* feat: 补充 `yylConfig.seed` 定义
+* feat: 补充 `env.workflow` 定义
+* feat: 补充 `env.seed` 定义
+
 ## 0.3.10 (2021-02-03)
 
 * feat: 补充 `alias.revRoot` 字段
