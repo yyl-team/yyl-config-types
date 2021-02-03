@@ -1,4 +1,8 @@
 # 版本信息
+
+## 0.3.15 (2021-02-03)
+
+* feat: 调整 `YylConfig.watch`
 ## 0.3.14 (2021-02-03)
 * feat: 补充 `YylConfigEntry` 类型
 * feat: 补充 `YylConfigEntryProps` 类型
