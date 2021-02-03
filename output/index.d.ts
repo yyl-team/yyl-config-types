@@ -137,6 +137,8 @@ export interface YylConfigAlias {
     imagesDest?: string;
     /** rev-manifest 输出路径 */
     revDest?: string;
+    /** rev-manifest 输出的根目录路径 */
+    revRoot?: string;
     /** 前置路径 */
     basePath?: string;
     /** 输出 host */
