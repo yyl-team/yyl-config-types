@@ -1,6 +1,6 @@
 {
   "name": "yyl-config-types",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "yyl.config types",
   "main": "output/index.js",
   "scripts": {

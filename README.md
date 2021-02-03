@@ -7,4 +7,4 @@ yarn add yyl-config-types --dev
 ```
 
 ## 文档
-[https://htmlpreview.github.io/?https://raw.githubusercontent.com/jackness1208/yyl-config-types/master/docs/modules.html](这里)
+[这里](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jackness1208/yyl-config-types/master/docs/modules.html)
