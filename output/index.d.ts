@@ -188,7 +188,7 @@ export interface YylConfig {
         afterScripts?: ScriptsHandler;
     };
     /** watch 相关配置 */
-    watch: {
+    watch?: {
         /** 配置构建执行前运行脚本 */
         beforeScripts?: ScriptsHandler;
         /** 配置构建执行前运行脚本 */
