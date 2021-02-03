@@ -1,3 +1,5 @@
+yyl-config-types / [Exports](modules.md)
+
 # yyl.config.js
 提供 YylConfig 对象
 
