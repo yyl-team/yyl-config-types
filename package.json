@@ -7,7 +7,7 @@
     "eslint": "eslint --ext=jsx,ts,tsx ./",
     "prettier": "prettier --write ./**/*.{ts,tsx,js}",
     "prepublishOnly": "npm run d & npm run prettier & npm run doc",
-    "doc": "typedoc ./index.ts --plugin typedoc-plugin-markdown",
+    "doc": "typedoc ./index.ts",
     "d": "tsc"
   },
   "eslintConfig": {
@@ -51,7 +51,6 @@
     "eslint-config-yyl-ts": "^0.1.0",
     "prettier": "^2.1.2",
     "typedoc": "^0.20.20",
-    "typedoc-plugin-markdown": "^3.4.5",
     "typescript": "^4.0.3"
   }
 }

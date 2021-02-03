@@ -5,6 +5,3 @@
 ```types
 yarn add yyl-config-types --dev
 ```
-
-## 文档
-[./docs/README.md](./docs/README.md)
