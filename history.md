@@ -1,4 +1,6 @@
 # 版本信息
+## 0.3.18 (2021-02-11)
+* feat: 去掉 `alias.publicPath` `alias.basePath`
 
 ## 0.3.15 (2021-02-03)
 

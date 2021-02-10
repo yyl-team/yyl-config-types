@@ -163,10 +163,6 @@ export interface YylConfigAlias {
   revDest: string
   /** rev-manifest 输出的根目录路径 */
   revRoot: string
-  /** 前置路径 */
-  basePath: string
-  /** 输出 host */
-  publicPath: string
   /** 其他 */
   [name: string]: string
 }
