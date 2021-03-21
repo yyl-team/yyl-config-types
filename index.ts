@@ -37,6 +37,8 @@ export interface ProxyConfig {
   homePage?: string
   /** 跳过规则 */
   ignores?: string[]
+  /** ui 界面端口 */
+  webPort?: number
 }
 
 /** 本地服务相关配置 */
@@ -53,6 +55,8 @@ export interface LocalserverConfig {
   serverAddress?: string
   /** mock 根目录 */
   mockRoot?: string
+  /** 本地服务运行入口 - 替代 localserver */
+  entry?: string
 }
 
 /** 输出目录相关配置 */
