@@ -1,4 +1,7 @@
 # 版本信息
+
+## 0.3.19 (2021-03-21)
+* feat: 补充 `localServer.entry`, `proxy.webPort`
 ## 0.3.18 (2021-02-11)
 * feat: 去掉 `alias.publicPath` `alias.basePath`
 
