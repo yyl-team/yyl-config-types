@@ -57,6 +57,8 @@ export interface LocalserverConfig {
   mockRoot?: string
   /** 本地服务运行入口 - 替代 localserver */
   entry?: string
+  /** 需要进行反向代理的远程路径 yyl 4.0 以上支持 */
+  proxies?: string[]
 }
 
 /** 输出目录相关配置 */

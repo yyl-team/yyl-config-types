@@ -1,5 +1,8 @@
 # 版本信息
 
+## 0.4.0 (2021-04-05)
+* feat: 新增 `localServer.proxies` 反向代理路径列表
+
 ## 0.3.19 (2021-03-21)
 * feat: 补充 `localServer.entry`, `proxy.webPort`
 ## 0.3.18 (2021-02-11)
