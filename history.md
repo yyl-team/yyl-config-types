@@ -1,5 +1,7 @@
 # 版本信息
 
+## 0.4.1 (2021-04-05)
+* feat: 新增 `YylConfigEntry` 属性
 ## 0.4.0 (2021-04-05)
 * feat: 新增 `localServer.proxies` 反向代理路径列表
 

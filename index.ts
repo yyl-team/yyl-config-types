@@ -234,7 +234,10 @@ export interface YylConfig {
 
 export interface YylConfigEntryProps {
   env: Env
+  [key: string]: any
 }
 
+export type YylConfigEntryFn = (env: Env, props: YylConfigEntryProps) => YylConfig
+
 /** yyl.config.js 返回对象 */
-export type YylConfigEntry = (props: YylConfigEntryProps) => YylConfig
+export type YylConfigEntry = YylConfig | YylConfigEntryFn
