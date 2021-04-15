@@ -1,3 +1,4 @@
+import { Express } from 'express'
 /** 平台类型 */
 export declare type PlatformType = 'pc' | 'mobile'
 
@@ -41,6 +42,17 @@ export interface ProxyConfig {
   webPort?: number
 }
 
+/** 本地服务运行入口 函数 入参 */
+export interface LocalserverEntryFnProps {
+  env: Env
+}
+
+/** 本地服务运行入口 函数 */
+export type LocalserverEntryFn = (props: LocalserverEntryFnProps) => Express
+
+/** 本地服务运行入口 */
+export type LocalserverEntry = string | LocalserverEntryFn
+
 /** 本地服务相关配置 */
 export interface LocalserverConfig {
   /** 端口 */
@@ -56,7 +68,7 @@ export interface LocalserverConfig {
   /** mock 根目录 */
   mockRoot?: string
   /** 本地服务运行入口 - 替代 localserver */
-  entry?: string
+  entry?: LocalserverEntry
   /** 需要进行反向代理的远程路径 yyl 4.0 以上支持 */
   proxies?: string[]
 }
@@ -232,12 +244,14 @@ export interface YylConfig {
   urlLoaderMatch?: RegExp
 }
 
+/** yyl.config.js 返回对象 - 函数 props */
 export interface YylConfigEntryProps {
   env: Env
   [key: string]: any
 }
 
-export type YylConfigEntryFn = (env: Env, props: YylConfigEntryProps) => YylConfig
+/** yyl.config.js 返回对象 - 函数 */
+export type YylConfigEntryFn = (props: YylConfigEntryProps) => YylConfig
 
 /** yyl.config.js 返回对象 */
 export type YylConfigEntry = YylConfig | YylConfigEntryFn

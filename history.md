@@ -1,5 +1,9 @@
 # 版本信息
+## 0.4.3 (2021-04-15)
+* feat: 新增 `LocalserverEntry` 属性
 
+## 0.4.2 (2021-04-05)
+* feat: 调整 `YylConfigEntry` 属性
 ## 0.4.1 (2021-04-05)
 * feat: 新增 `YylConfigEntry` 属性
 ## 0.4.0 (2021-04-05)
