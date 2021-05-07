@@ -8,6 +8,34 @@ export type WorkflowType = 'webpack' | 'gulp-requirejs' | 'other'
 /** seed 二级类型, 当 workflow = webpack 时适用 */
 export type SeedType = 'react-ts' | 'vue2' | 'vue2-ts' | 'base'
 
+/** 日志log 类型 */
+export type LoggerMsgType = 'error' | 'warn' | 'info' | 'add' | 'update' | 'success' | 'del' | 'cmd'
+
+/** 日志 progress 类型 */
+export type LoggerProgressType = 'start' | 'finished' | number
+
+/** 日志 map */
+export interface LogggerType {
+  msg: {
+    Args01: LoggerMsgType
+    Args02: any[]
+    Args03: undefined
+  }
+  progress: {
+    Args01: LoggerProgressType
+    Args02: LoggerMsgType
+    Args03: any[]
+  }
+}
+
+/** 日志logger */
+export type Logger<T extends keyof LogggerType = keyof LogggerType> = (
+  type: T,
+  args01: LogggerType[T]['Args01'],
+  args02?: LogggerType[T]['Args02'],
+  args03?: LogggerType[T]['Args03']
+) => void
+
 /** 日志等级 */
 export type LogLevel = 1 | 2 | 0
 
