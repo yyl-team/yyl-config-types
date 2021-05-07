@@ -15,7 +15,7 @@ export type LoggerMsgType = 'error' | 'warn' | 'info' | 'add' | 'update' | 'succ
 export type LoggerProgressType = 'start' | 'finished' | number
 
 /** 日志 map */
-export interface LogggerType {
+export interface LoggerType {
   msg: {
     Args01: LoggerMsgType
     Args02: any[]
@@ -29,11 +29,11 @@ export interface LogggerType {
 }
 
 /** 日志logger */
-export type Logger<T extends keyof LogggerType = keyof LogggerType> = (
+export type Logger<T extends keyof LoggerType = keyof LoggerType> = (
   type: T,
-  args01: LogggerType[T]['Args01'],
-  args02?: LogggerType[T]['Args02'],
-  args03?: LogggerType[T]['Args03']
+  args01: LoggerType[T]['Args01'],
+  args02?: LoggerType[T]['Args02'],
+  args03?: LoggerType[T]['Args03']
 ) => void
 
 /** 日志等级 */
