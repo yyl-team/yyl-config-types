@@ -1,4 +1,6 @@
 # 版本信息
+## 0.5.0 (2021-05-07)
+* feat: 新增 `Logger`, `LogggerType`, `LoggerMsgType`, `LoggerProgressType`
 ## 0.4.3 (2021-04-15)
 * feat: 新增 `LocalserverEntry` 属性
 
