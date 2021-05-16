@@ -161,6 +161,8 @@ export interface Env {
   proxy?: boolean | number
   /** 开启 https 代理 */
   https?: boolean
+  /** 是否自动打开 homepage */
+  open?: boolean
   /** 已由 --remote 代替，不建议使用 */
   ver?: 'remote'
 
