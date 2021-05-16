@@ -1,12 +1,12 @@
 {
   "name": "yyl-config-types",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "yyl.config types",
   "main": "output/index.js",
   "scripts": {
     "eslint": "eslint --ext=jsx,ts,tsx ./",
-    "prettier": "prettier --write ./**/*.{ts,tsx,js}",
-    "prepublishOnly": "npm run d & npm run prettier & npm run doc",
+    "prettier": "prettier --write ./*.*",
+    "prepublishOnly": "npm run d && npm run prettier && npm run doc",
     "doc": "typedoc ./index.ts",
     "d": "tsc"
   },
@@ -27,7 +27,6 @@
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "parser": "typescript",
     "quoteProps": "consistent",
     "trailingComma": "none",
     "printWidth": 100

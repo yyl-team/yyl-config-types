@@ -1,4 +1,4 @@
-import { Express } from 'express'
+import type { Express } from 'express'
 /** 平台类型 */
 export declare type PlatformType = 'pc' | 'mobile'
 
@@ -12,7 +12,7 @@ export type SeedType = 'react-ts' | 'vue2' | 'vue2-ts' | 'base'
 export type LoggerMsgType = 'error' | 'warn' | 'info' | 'add' | 'update' | 'success' | 'del' | 'cmd'
 
 /** 日志 progress 类型 */
-export type LoggerProgressType = 'start' | 'finished' | number
+export type LoggerProgressType = 'start' | 'finished' | 'forceFinished' | number
 
 /** 日志 map */
 export interface LoggerType {
@@ -187,7 +187,7 @@ export interface Env {
   [key: string]: any
 }
 
-export type ScriptsFn = ({ env: Env, config: YylConfig }) => Promise<unknown>
+export type ScriptsFn = ({ env: Env, config: YylConfig, logger: Logger }) => Promise<unknown>
 export type ScriptsHandler = string | ScriptsFn
 
 export interface YylConfigAlias {
