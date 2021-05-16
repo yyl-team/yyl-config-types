@@ -6,4 +6,4 @@ node_modules/**
 **/*.json
 **/*.scss
 **/*.yml
-**/*.md
+yarn.lock
