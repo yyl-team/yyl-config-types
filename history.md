@@ -1,5 +1,10 @@
 # 版本信息
 
+## 0.5.4 (2021-05-23)
+
+- feat: 新增 loggerType - `cleanScreen`
+- feat: 补充 `env.doctor`
+
 ## 0.5.3 (2021-05-16)
 
 - feat: 补充 `env.open`

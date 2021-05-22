@@ -26,6 +26,11 @@ export interface LoggerType {
     Args02: LoggerMsgType
     Args03: any[]
   }
+  cleanScreen: {
+    Args01: undefined
+    Args02: undefined
+    Args03: undefined
+  }
 }
 
 /** 日志logger */
@@ -184,6 +189,8 @@ export interface Env {
   // - yyl-seed-webpack 配置
   /** 使用 hot plugin */
   useHotPlugin?: boolean
+  /** 是否自动检查并更新 seed 包 */
+  doctor?: boolean
 
   /** 自定义变量 */
   [key: string]: any
