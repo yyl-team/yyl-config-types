@@ -192,6 +192,9 @@ export interface Env {
   /** 是否自动检查并更新 seed 包 */
   doctor?: boolean
 
+  /** 使用 esbuild 作为构建方式 */
+  esbuild?: boolean
+
   /** 自定义变量 */
   [key: string]: any
 }
@@ -220,6 +223,34 @@ export interface YylConfigAlias {
   revRoot: string
   /** 其他 */
   [name: string]: string
+}
+
+/** ，模块联邦配置 - share */
+export interface YylModuleFederationShared {
+  /** for dependency via the ModuleFederationPlugin */
+  eager?: boolean
+  /** allow only a single version of shared module in share scope (disabled by default) */
+  singleton?: boolean
+  /** 要求的版本 */
+  requiredVersion?: string
+}
+
+/** 模块联邦配置 */
+export interface YylModuleFederation {
+  /** 组件名称 */
+  name?: string
+  /** 远程调用的模块 */
+  remotes?: {
+    [name: string]: string
+  }
+  /** 模块导出 */
+  exposes?: {
+    [path: string]: string
+  }
+  /** 模块分享 */
+  shared?: {
+    [module: string]: YylModuleFederationShared
+  }
 }
 
 /** yyl 配置 */
@@ -279,6 +310,8 @@ export interface YylConfig {
   base64Limit?: number
   /** url-loader 命中 test 追加 */
   urlLoaderMatch?: RegExp
+  /** 模块联邦相关配置 */
+  moduleFederation?: YylModuleFederation
 }
 
 /** yyl.config.js 返回对象 - 函数 props */
