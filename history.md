@@ -1,5 +1,9 @@
 # 版本信息
 
+## 0.6.0 (2021-07-27)
+
+- feat: 新增 `env.esbuild` 属性
+- feat: 新增 `yylConfig.moduleFederation` 配置
 ## 0.5.4 (2021-05-23)
 
 - feat: 新增 loggerType - `cleanScreen`
